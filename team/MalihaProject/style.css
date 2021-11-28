@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(#7041bb, #7597de);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+html body {
+  padding-top: 300px;
+}
+header .logo {
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 8px 18px;
+  text-decoration: none;
+  user-select: none;
+}
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #2b1055;
+  border-radius: 30px;
+}
+.content {
+  position: relative;
+}
+.content .textBox {
+  position: relative;
+  max-width: 550px;
+}
+.content .about {
+  position: relative;
+  max-width: 700px;
+}
+.content .textBox h2 {
+  color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  font-weight: 700;
+  padding: 10px 30px;
+  bottom: 200px;
+}
+.content .textBox p {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 10px 30px;
+}
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 25px;
+  padding: 15px 300px;
+  color: #2b1055;
+  font-size: 1.2em;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #fff;
+  text-decoration: none;
+}
+.content .about h2 {
+  color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  font-weight: 700;
+  padding: 5px 30px;
+}
+.content .about p {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 5px 30px;
+}
+.content .contact-title {
+  margin-top: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.content .contact-title h1 {
+  font-size: 36px;
+  line-height: 30px;
+  padding: 30px 500px;
+  bottom: 200px;
+  position: relative;
+}
+.content .contact-title h2 {
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 10px 500px;
+  bottom: 250px;
+  position: relative;
+}
+
+.sci {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7041bb;
+  transition: 0.2s ease ease-in-out;
+}
+.sci li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+.sci li a:hover {
+  background: #2b1055;
+  transform: translateY(-10px);
+}
+.camera {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  top: 300px;
+  max-width: 700px;
+}
+.maliha {
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  top: 300px;
+  max-width: 20%;
+  border-radius: 10px;
+}
+form {
+  position: relative;
+  bottom: 200px;
+  padding: 20px 500px;
+}
+
+::placeholder {
+  color: #fff;
+}
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font: #fff;
+}
+
+/* this was going to be used for the menu toggle*/
+
+@media (max-width: 991px) {
+  section {
+    padding: 150px 20px;
+  }
+  header {
+    padding: 20px;
+  }
+  .navigation {
+    display: none;
+  }
+  .toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #2b1055 url(images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+/*Download button setup*/
+/*Use transition to create progress bar effect*/
+.button {
+  position: absolute;
+  top: -20%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 340px;
+  background: #7d2ae8;
+  border-radius: 55px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  overflow: hidden;
+}
+.button.active {
+  height: 20px;
+  width: 500px;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #5b13b9;
+  border-radius: 55px;
+  transition: all 6s ease-in-out;
+}
+.button.active::before {
+  animation: layer 6s ease-in-out forwards;
+}
+@keyframes layer {
+  100% {
+    left: 0%;
+  }
+}
+.button .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
+}
+.button.active .content {
+  transform: translateY(60px);
+}
+.button .content i,
+.button .content .button-text {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+.button .content .button-text {
+  font-size: 28px;
+  margin-left: 8px;
+}

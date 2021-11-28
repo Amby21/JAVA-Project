@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="A webpage about Skandan's information">
+<meta name="author" content="Skandan">
+
+<!-- Style Sheet -->
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet"> 
+</head>	
+
+<body>
+
+
+<!--Profile Name -->
+<div class="profile">
+<!--Profile Photo -->
+<img height=150px width=150px  src="profile_photo.jpg" alt="Skandan's profile image">
+<h1> Skandan Ganesh </h1>
+<p> <em>Graduate student pursuing <b>Masters in Management Information Systems at UIC</b> </em> </p>
+<!--LinkedIN Link -->
+<strong><a href = "https://www.linkedin.com/in/skandan-ganesh/"> LinkedIN Profile </a></strong>
+</div>
+
+<hr>
+
+<!--Un-ordered list in HTML for education -->
+<div class="education">
+<h3> Education </h3>
+<ul>
+<li>Masters in Management Information System - 2022 - UIC</li>
+<li>Bachelors in Computer Science and Engineering - 2013 - UIC</li>
+</ul>
+</div>
+
+<!--Table in HTML for work experience -->
+<div class="experience">
+<h3> Work Experience </h3>
+
+<table>
+
+<thead>
+<th>Company</td><th></th><th>Duration</th>
+</tr>
+<thead>
+
+<tbody>
+<tr>
+<td>Max Healthcare</td><td> </td><td>Sept'17 - Jul'21 </td>
+</tr>
+<tr>
+<td>Techequity Technologies</td><td> </td><td>Oct'16 - Sep'17 </td>
+</tr>
+<tr>
+<td>PricewaterhouseCoopers</td><td> </td><td>Jun'14 - Sep'16 </td>
+</tr>
+<tr>
+<td>Arteria Technology </td><td> </td><td>Sep'13 - Mar'14</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--Ordered list in HTML for Hobbies-->
+<div class="hobbies">
+<h3> Hobbies </h3>
+<ol>
+<li> Youtube content creator @<strong><a href="https://www.youtube.com/channel/UCxZt8m-zNzTuuNNcRtZOkEg">ganeshhorashastram</strong></a></li>
+<li> Photography </li>
+<li> Percussion </li>
+</ol>
+</div>
+<hr>
+<div class="footer">
+<a href="contactMe.html"> Contact Information </a>
+<button type="button" onclick="colorize(this, 'red')">
+Click me to change my color.
+</button>
+<script>
+	function colorize(element,color) { element.style.color = color;}
+	</script>
+<button type="button" onclick="alert('Oh no!')">Don't Click!</button>
+
+</div>
+</body>
+</html>

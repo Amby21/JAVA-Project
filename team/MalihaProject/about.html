@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Maliha Scrolling Website | About Me!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Boxiocns CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+    <section>
+        <header>
+            <!--set about page as active-->
+            <img src="images/maliha.png" class="maliha">
+            <a href="#" class="logo">Maliha Hasan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="about">
+                <h2>About Me!</h2>
+                <p> Hello, I'm Maliha Hasan, a graduate student at UIC and soon to be Technology Consultant at RSM. I graduated with high honors from University of Illinois at Urbana-Champaign with a degree in Operations Management and Information Systems.
+                     I've gained a wealth of knowledge and expertise by working in various companies in a variety of fields including CDW, RSM and UIUC.
+
+                    In addition to this, my passions include inclusive work environments, baking, photography, and exercising. I love to challenge myself and discover the overlap between development, design, and communication. 
+                    Through the MIS program at UIC I am able to take a deeper dive into development and gain skills with Java, HTML, SQL and R. I hope to carry this knowledge into my new role as a Business Applications D365 Tech Consultant after graduating from UIC.
+                    <div class="button">
+                        <div class="content">
+                          <i class="bx bx-cloud-download"></i>
+                          <span class="button-text">Download</span>
+                          
+                        </div>
+                    </div>
+                    <!--Using javascript to create a download animation-->
+                    <script>
+                      const button = document.querySelector(".button");
+                      button.addEventListener("click", () =>{
+                        button.classList.add("active");
+                        setTimeout(()=>{
+                          button.classList.remove("active");
+                          button.querySelector("i").classList.replace("bx-cloud-download", "bx-check-circle")
+                          button.querySelector("span").innerText = "Completed";
+
+                        },6000);
+                      });
+                    </script>
+                </p>
+            </div>
+        </div>
+        
+      
+
+    </section>
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active')
+    }
+</script>
+</html>

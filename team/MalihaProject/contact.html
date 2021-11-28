@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Maliha Scrolling Website | About Me!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <section>
+        <header>
+            <!--set contact page as active-->
+            <a href="#" class="logo">Maliha Hasan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html"class="active">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="contact-title">
+                <h1>How to contact me!</h1>
+                <h2>Please feel free to submit the form below, or reach me on my social media links below!</h2>
+            </div>
+            <!---Creating placeholder to contact me... submit button not yet setup for new page!-->
+            <div class="contact-form">
+                <form id="contact-form" method="post" action="">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                    <input name="email" type="text" class="form-control" placeholder="Your Email" required><br>
+                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+                </form>
+            </div>
+        </div>
+        
+        <ul class="sci">
+            <li><a href=" https://www.linkedin.com/in/malihahasan91/"><img src="images/linkedin.png"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100014627358104"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/imalihahasan/"><img src="images/instagram.png"></a></li>
+        </ul>
+
+    </section>
+</body>
+<!--- Tried using javascript to toggle within pages -->
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active')
+    }
+</script>
+</html>

@@ -1,0 +1,225 @@
+
+body {
+  font-family: Arial;
+  padding: 0px;
+
+}
+
+/* Header/Blog Title */
+.header {
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
+  background-color: #333;
+  height: 100px;
+}
+
+.header h3{
+  background-color: #333;
+  color: #f2f2f2;
+}
+.header h1 {
+  font-size: 50px;
+  color: #f2f2f2;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: center;
+  width: 75%;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  background-color:#f1f1f1";
+}
+
+.leftbar{
+  
+}
+
+-----my page styles----
+
+h1 {
+font-family: 'Montserrat', sans-serif;
+color:#66BFBF;
+}
+
+
+h2 {
+font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+font-family: 'Montserrat', sans-serif;
+color:#66BFBF;
+}
+
+a{
+color: #11999E;
+}
+hr{
+margin:0;
+}
+
+.profile{
+padding: 10px;
+}
+
+.experience{
+padding: 10px;
+}
+
+.hobbies{
+padding: 10px;
+}
+
+.footer{
+padding: 10px;
+}
+
+.education{
+padding: 10px;
+}
+
+.contact{
+padding: 10px;
+}
+
+.main-center{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-full{
+  min-height: 100vh;
+}
+.main-gray{
+  background-color: #f3f4f5;
+}
+table tr .add{
+  display: none;
+}
+table tr .edit{
+  display: inline-block;
+}
+table tr.row-editable .add{
+  display: inline-block;
+}
+table tr.row-editable .edit{
+  display: none
+}
+.social{
+  list-style-type: none;
+  padding: 0;
+}
+.table-wrapper table tr.row-editable .actions,
+.table-wrapper table tr:hover .actions{
+  opacity: 1;
+  pointer-events: all;
+}
+.table-wrapper table tr .actions{
+  width: 76px;
+  opacity: 0;
+  pointer-events: none;
+}
+.team-box{
+  display: block;
+  transition: .3s;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid transparent;
+  height: 100%;
+  border-radius: 3px;
+}
+.team-box:hover{
+  border: 2px solid dodgerblue;
+  box-shadow: 1px 1px 10px 0px #ccc;
+
+}
+.team-box .image-wrapper{
+  border-radius: 50%;
+  overflow: hidden;
+}
+.table-wrapper{
+  position: relative;
+}
+.table-wrapper table input{
+  width: auto;
+  display: inline;
+}
+.table-loader{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .7);
+  display: none;
+}
+.table-loader .spinner{
+  color: dodgerblue;
+  position: absolute;
+  top: calc(50% - 10px) ;
+  left: calc(50% - 10px) ;
+  transform: rotate(0deg);
+}
+.table-loader.loading{
+  display: block;
+}
+.table-loader.loading .spinner{
+  animation: spin-animation 1s infinite;
+  display: inline-block;
+}
+.icn-spinner {
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
